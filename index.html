@@ -1,11 +1,11 @@
 <html>
 <head>
 <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-<title>Sklep</title>
+<title>Apollo12</title>
 <link href="styles.css" type="text/css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4-="
   crossorigin="anonymous"></script>
 
 <script type="text/javascript">
@@ -168,9 +168,8 @@ var colorController = gui.addColor(settings, 'color').onChange(function () {
 	
 		
 		<div class="menu">
-			<a href="index.html">Katering Dietetyczny</a>
-			<a href="registery.html">Rejestracja</a>
-			<a href="login.html">Zaloguj się</a>
+			<a href="#">Katering Dietetyczny</a>
+			<a href="#">Rejestracja</a>
 		</div>
 		
 		<div class="user-panel">
@@ -202,13 +201,13 @@ var colorController = gui.addColor(settings, 'color').onChange(function () {
 		<p>W naszej bogatej ofercie każdy znajdzie coś dla siebie - nawet najbardziej wymagający Klient!</p>
 		<p>Sprawdź koniecznie co możemy Ci zaoferować!</p></div>
 	
-		<div class="about"><a href="#">WIĘCEJ O NAS</a></div>
 	</div>
 	
 	<div class="oferta">
 		
 		
-		<p>Zamów już teraz!</p>			
+		<p>Zamów już teraz!</p>
+			
 		<table class="tabela">
 			<thead>
 				<tr>
@@ -221,14 +220,14 @@ var colorController = gui.addColor(settings, 'color').onChange(function () {
 			<tbody>
 				<tr class="wiersz1">
 					<td><b>1 miesiąc</b></td>
-					<td><input id="option1" type="radio" name="choice" value="100" checked="checked"/>
-					<label for="option1">100 zł</label></td>
+					<td class="text-left"><input id="option1" type="radio" name="choice" value="100" checked="checked"/>
+					<label for="option1"></label><span class="wiersz-cena">100 zł</span></td>
 					
-					<td><input id="option2" type="radio" name="choice" value="110"/>
-					<label for="option2">110 zł</label></td>
+					<td class="text-left"><input id="option2" type="radio" name="choice" value="110"/>
+					<label for="option2"></label><span class="wiersz-cena">110 zł</span></td>
 							
-					<td><input id="option3" type="radio" name="choice" value="150"/>
-					<label for="option3">150 zł</label></td>
+					<td class="text-left"><input id="option3" type="radio" name="choice" value="150"/>
+					<label for="option3"></label><span class="wiersz-cena">150 zł</span></td>
 				</tr>
 						
 					<tr class="odstep-gora">
@@ -240,15 +239,15 @@ var colorController = gui.addColor(settings, 'color').onChange(function () {
 							
 				<tr class="wiersz2">
 					<td><b>2 miesiące</b></td>
-					<td><input id="option4" type="radio" name="choice" value="185"/>
-					<label for="option4">185 zł</label></td>
+					<td class="text-left"><input id="option4" type="radio" name="choice" value="185"/>
+					<label for="option4"></label><span class="wiersz-cena">185 zł</span></td>
 						
-					<td><input id="option5" type="radio" name="choice" value="200"/>
-					<label for="option5">200 zł</label></td>
+					<td class="text-left"><input id="option5" type="radio" name="choice" value="200"/>
+					<label for="option5"></label><span class="wiersz-cena">200 zł</span></td>
 					
 					<td class="relative">
 						<input id="option6" type="radio" name="choice" value="300"/>
-						<label for="option6">300 zł</label>
+						<label for="option6"></label><span class="wiersz-cena">300 zł</span>
 							<i class="fa fa-tag" aria-hidden="true">
 								<p class="hit">HIT!</p>
 							</i>
@@ -264,19 +263,18 @@ var colorController = gui.addColor(settings, 'color').onChange(function () {
 								
 				<tr class="wiersz3">
 					<td><b>4 miesiące</b></td>
-					<td><input id="option7" type="radio" name="choice" value="350"/>
-					<label for="option7">350 zł</label></td>
+					<td class="text-left"><input id="option7" type="radio" name="choice" value="350"/>
+					<label for="option7"></label><span class="wiersz-cena">350 zł</span></td>
 							
-					<td><input id="option8" type="radio" name="choice" value="390"/>
-					<label for="option8">390 zł</label></td>
+					<td class="text-left"><input id="option8" type="radio" name="choice" value="390"/>
+					<label for="option8"></label><span class="wiersz-cena">390 zł</span></td>
 							
-					<td><input id="option9" type="radio" name="choice" value="650"/>
-					<label for="option9">650 zł</label></td>
+					<td class="text-left"><input id="option9" type="radio" name="choice" value="650"/>
+					<label for="option9"></label><span class="wiersz-cena">650 zł</span></td>
 				</tr>
 			</tbody>
 		</table>
 		<div class="zamawiam"><input type="submit" value="Zamawiam teraz"/></div>
-		
 	</div>
 	
 	<div class="tlo2">
@@ -295,28 +293,26 @@ var colorController = gui.addColor(settings, 'color').onChange(function () {
 		</div>
 		
 	</div>
+
 	
 	
 	<div class="stopka">
 		<div class="ramka">
-			<p class="onas">Nasza firma zajmuje się przygotowywaniem posiłów oraz ich dostarczaniem na terenie całej Polski. Wybierając naszą ofertę, masz pewność
+		<p class="onas">Nasza firma zajmuje się przygotowywaniem posiłów oraz ich dostarczaniem na terenie całej Polski. Wybierając naszą ofertę, masz pewność
 			że posiłki są zrobione z najwyższej klasy prduktów starranie dobranych przez profesjonalnch kucharzy. Pakowane są w hermetyczne opakowania, które 
 			zapewdniają świeżość od razu po otwarciu. Nie czekaj i dołącz już do nas!</p>
+		<div class="kol-1">
 			
-			<div class="kol-1">
 			<hr>
-				<a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Kontakt</a>
-				<a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Zaloguj</a>
-				<a href="#"><i class="fa fa-id-card" aria-hidden="true"></i> Zarejestruj się</a>
-				<a href="#"><i class="fa fa-book" aria-hidden="true"></i> Regulamin</a>
-				<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
-				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
-				<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</a>
-			</div>
-		
-		<div class="copyright">
-			<p>Copyright © Katering-online.pl 2017.</p>
+			<a href="kontakt.html"><i class="fa fa-phone" aria-hidden="true"></i> Kontakt</a>
+			<a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Zaloguj</a>
+			<a href="#"><i class="fa fa-id-card" aria-hidden="true"></i> Zarejestruj się</a>
+			<a href="#"><i class="fa fa-book" aria-hidden="true"></i> Regulamin</a>
+			<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+			<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+			<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</a>
 		</div>
+		<div class="copyright"><p>Copyright © stronka.pl - 2017. Technologię zapewnia T&D Dvelopment</p></div>
 		</div>
 		
 	</div>
